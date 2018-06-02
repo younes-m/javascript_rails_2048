@@ -1,0 +1,20 @@
+I"è(function() {
+  var construct_game;
+
+  window.change = function() {
+    return $('#test_button').html("coffee function");
+  };
+
+  construct_game = function() {
+    jQuery('<p />', {
+      id: 'test'
+    }).appendTo($('#game_zone'));
+    return $('#test').html("Writing in a brand new div !");
+  };
+
+  console.log("ah que coucou from coffee");
+
+  $('document').ready(construct_game);
+
+}).call(this);
+:ET

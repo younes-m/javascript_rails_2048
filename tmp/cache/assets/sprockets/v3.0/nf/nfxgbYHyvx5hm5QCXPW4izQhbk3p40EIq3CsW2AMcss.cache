@@ -1,0 +1,28 @@
+I"Ä(function() {
+  var board_size, construct_game;
+
+  board_size = 4;
+
+  window.change = function() {
+    return $('#test_button').html("coffee function");
+  };
+
+  construct_game = function() {
+    var i, num, ref, results;
+    $('<div>hello</div>').appendTo('#game_zone');
+    results = [];
+    for (num = i = 1, ref = Math.pow(board_size, 2); 1 <= ref ? i <= ref : i >= ref; num = 1 <= ref ? ++i : --i) {
+      jQuery('div /', {
+        id: "square" + num,
+        "class": "col"
+      }).$('#square' + num).appendTo($('#game_zone'));
+      $('#square' + num).html(num);
+      results.push(console.log("\#square" + num));
+    }
+    return results;
+  };
+
+  $('document').ready(construct_game);
+
+}).call(this);
+:ET

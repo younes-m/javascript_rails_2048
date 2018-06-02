@@ -1,0 +1,27 @@
+I"c(function() {
+  var board_size, construct_game;
+
+  board_size = 4;
+
+  window.change = function() {
+    return $('#test_button').html("coffee function");
+  };
+
+  construct_game = function() {
+    var i, num, ref, results;
+    results = [];
+    for (num = i = 1, ref = Math.pow(board_size, 2); 1 <= ref ? i <= ref : i >= ref; num = 1 <= ref ? ++i : --i) {
+      results.push(jQuery('div /', {
+        id: "square" + num,
+        "class": "col"
+      }).appendTo($('#game_zone')));
+    }
+    return results;
+  };
+
+  console.log("ah que coucou from coffee");
+
+  $('document').ready(construct_game);
+
+}).call(this);
+:ET

@@ -1,0 +1,7 @@
+I"(function() {
+  console.log("ah que coucou from coffee");
+
+  $('#test_button').html("coffee changing !");
+
+}).call(this);
+:ET

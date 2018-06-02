@@ -1,0 +1,9 @@
+I"¥(function() {
+  window.change = function() {
+    return $('#test_button').html("coffee function");
+  };
+
+  console.log("ah que coucou from coffee");
+
+}).call(this);
+:ET

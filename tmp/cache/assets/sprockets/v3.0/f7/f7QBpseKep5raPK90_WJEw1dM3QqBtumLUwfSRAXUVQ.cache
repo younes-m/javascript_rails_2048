@@ -1,0 +1,18 @@
+I"b(function() {
+  var construct_game;
+
+  window.change = function() {
+    return $('#test_button').html("coffee function");
+  };
+
+  construct_game = function() {
+    console.log("on ready");
+    return console.log("am i a multiple lines function?");
+  };
+
+  console.log("ah que coucou from coffee");
+
+  $('document').ready(construct_game);
+
+}).call(this);
+:ET
