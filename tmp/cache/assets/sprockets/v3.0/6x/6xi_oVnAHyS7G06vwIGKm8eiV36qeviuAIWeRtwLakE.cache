@@ -1,0 +1,145 @@
+I"2(function() {
+  var BOARD_SIZE, cellFromId, cellIdSelector, cellNumber, cellSelector, constructGame, createCell, create_separator, emptyCell, fillCell, initialize, isEmpty, lose, moveUp, nextTurn, randomDrop, randomEmptyCell;
+
+  BOARD_SIZE = 4;
+
+  window.testButton = function() {
+    return randomDrop();
+  };
+
+  window.moveUpCall = function() {
+    return moveUp();
+  };
+
+  moveUp = function() {
+    var cell, cellUpId, hasMoved, i, len, newDataValue, ref;
+    hasMoved = true;
+    while (hasMoved) {
+      hasMoved = false;
+      ref = $('.filledCell');
+      for (i = 0, len = ref.length; i < len; i++) {
+        cell = ref[i];
+        if (!(cellNumber(cell) > BOARD_SIZE)) {
+          continue;
+        }
+        cellUpId = cellNumber(cell) - BOARD_SIZE;
+        if (isEmpty(cellUpId)) {
+          emptyCell(cell);
+          fillCell(cellFromId(cellUpId));
+          hasMoved = true;
+        } else if (cellSelector(cell).data('merged') === 0 && cellIdSelector(cellUpId).data('merged') === 0) {
+          if (cellSelector(cell).attr('data-value') === cellIdSelector(cellUpId).attr('data-value')) {
+            emptyCell(cell);
+            newDataValue = parseInt(cellIdSelector(cellUpId).attr('data-value')) + 1;
+            cellIdSelector(cellUpId).attr('data-value', "" + newDataValue);
+            cellIdSelector(cellUpId).data('merged', 1);
+          }
+        }
+      }
+    }
+    return nextTurn();
+  };
+
+  nextTurn = function() {
+    var cell, i, len, ref, results;
+    ref = $('.gameCell');
+    results = [];
+    for (i = 0, len = ref.length; i < len; i++) {
+      cell = ref[i];
+      results.push(cellSelector(cell).data('merged', 0));
+    }
+    return results;
+  };
+
+  randomDrop = function() {
+    var randomCell;
+    if ($('.emptyCell').length > 0) {
+      randomCell = randomEmptyCell();
+      return fillCell(randomCell);
+    } else {
+      return lose();
+    }
+  };
+
+  lose = function() {
+    return alert('YOU LOSE !');
+  };
+
+  randomEmptyCell = function() {
+    return $('.emptyCell')[Math.floor(Math.random() * $('.emptyCell').length)];
+  };
+
+  isEmpty = function(cellNumber) {
+    return $("\#cell" + cellNumber).hasClass('emptyCell');
+  };
+
+  initialize = function() {
+    return randomDrop();
+  };
+
+  cellNumber = function(cell) {
+    return parseInt(cell.id.replace('cell', ''), 10);
+  };
+
+  cellIdSelector = function(num) {
+    return $("\#cell" + num);
+  };
+
+  cellSelector = function(cell) {
+    return $("\#" + cell.id);
+  };
+
+  cellFromId = function(id) {
+    return $("\#cell" + id)[0];
+  };
+
+  fillCell = function(cell) {
+    cellSelector(cell).removeClass('emptyCell');
+    cellSelector(cell).addClass('filledCell');
+    return cellSelector(cell).attr('data-value', 1);
+  };
+
+  emptyCell = function(cell) {
+    cellSelector(cell).removeClass('filledCell');
+    cellSelector(cell).addClass('emptyCell');
+    return cellSelector(cell).attr('data-value', 0);
+  };
+
+  constructGame = function() {
+    var i, num, ref;
+    for (num = i = 1, ref = Math.pow(BOARD_SIZE, 2); 1 <= ref ? i <= ref : i >= ref; num = 1 <= ref ? ++i : --i) {
+      createCell(num);
+      if (num % BOARD_SIZE === 0) {
+        create_separator();
+      }
+    }
+    return initialize();
+  };
+
+  createCell = function(num) {
+    jQuery('<div />', {
+      id: "colcontainer" + num,
+      "class": "col m-1"
+    }).appendTo($('#gameZone'));
+    jQuery('<div />', {
+      id: "rowcontainer" + num,
+      "class": "row"
+    }).appendTo($("\#colcontainer" + num));
+    jQuery('<div/>', {
+      id: "cell" + num,
+      "class": "col-12 gameCell emptyCell"
+    }).appendTo($("\#rowcontainer" + num));
+    cellIdSelector(num).attr('data-value', 0);
+    return cellIdSelector(num).data('merged', 0);
+  };
+
+  create_separator = function() {
+    return jQuery('<div/>', {
+      "class": "separator col-12"
+    }).appendTo($('#gameZone'));
+  };
+
+  $('document').ready(constructGame);
+
+}).call(this);
+:ET

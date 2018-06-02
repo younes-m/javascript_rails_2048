@@ -1,0 +1,116 @@
+I")(function() {
+  var BOARD_SIZE, cellIdSelector, cellNumber, cellSelector, constructGame, createCell, create_separator, fillCell, initialize, isEmpty, lose, moveUp, randomDrop, random_emptyCell;
+
+  BOARD_SIZE = 4;
+
+  window.testButton = function() {
+    return randomDrop();
+  };
+
+  window.moveUpCall = function() {
+    return moveUp();
+  };
+
+  moveUp = function() {
+    var cell, cellUpId, i, len, ref, results;
+    ref = $('.filledCell');
+    results = [];
+    for (i = 0, len = ref.length; i < len; i++) {
+      cell = ref[i];
+      if (!(cellNumber(cell) > BOARD_SIZE)) {
+        continue;
+      }
+      cellUpId = cellNumber(cell) - BOARD_SIZE;
+      if (isEmpty(cellUpId)) {
+        cellSelector(cell).removeClass('filledCell');
+        cellSelector(cell).addClass('emptyCell');
+        fillCell(cellIdSelector(cellUpId));
+        results.push(moveUp());
+      } else {
+        results.push(void 0);
+      }
+    }
+    return results;
+  };
+
+  randomDrop = function() {
+    var randomCell;
+    if ($('.emptyCell').length > 0) {
+      randomCell = random_emptyCell();
+      return fillCell(randomCell);
+    } else {
+      return lose();
+    }
+  };
+
+  lose = function() {
+    return alert('YOU LOSE !');
+  };
+
+  random_emptyCell = function() {
+    return $('.emptyCell')[Math.floor(Math.random() * $('.emptyCell').length)];
+  };
+
+  isEmpty = function(cellNumber) {
+    return $("\#cell" + cellNumber).hasClass('emptyCell');
+  };
+
+  initialize = function() {
+    return randomDrop();
+  };
+
+  cellNumber = function(cell) {
+    return parseInt(cell.id.replace('cell', ''), 10);
+  };
+
+  cellIdSelector = function(num) {
+    return $("\#cell" + num);
+  };
+
+  cellSelector = function(cell) {
+    return $("\#" + cell.id);
+  };
+
+  fillCell = function(cell) {
+    cellSelector(cell).removeClass('emptyCell');
+    return cellSelector(cell).addClass('filledCell');
+  };
+
+  constructGame = function() {
+    var i, num, ref;
+    for (num = i = 1, ref = Math.pow(BOARD_SIZE, 2); 1 <= ref ? i <= ref : i >= ref; num = 1 <= ref ? ++i : --i) {
+      createCell(num);
+      if (num % BOARD_SIZE === 0) {
+        create_separator();
+      }
+    }
+    return initialize();
+  };
+
+  createCell = function(num) {
+    jQuery('<div />', {
+      id: "colcontainer" + num,
+      "class": "col m-1"
+    }).appendTo($('#gameZone'));
+    jQuery('<div />', {
+      id: "rowcontainer" + num,
+      "class": "row"
+    }).appendTo($("\#colcontainer" + num));
+    jQuery('<div/>', {
+      id: "cell" + num,
+      "class": "col-12 gameCell emptyCell"
+    }).appendTo($("\#rowcontainer" + num));
+    cellIdSelector(num).data('value', 0);
+    return console.log($("\#cell" + num).data('value'));
+  };
+
+  create_separator = function() {
+    return jQuery('<div/>', {
+      "class": "separator col-12"
+    }).appendTo($('#gameZone'));
+  };
+
+  $('document').ready(constructGame);
+
+}).call(this);
+:ET

@@ -2,17 +2,59 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.game_cell{
+.gameCell{
   border: thin solid black ;
   position:relative;
   overflow:hidden;
   padding-bottom:100%;
 }
 
-.empty_cell{
+.emptyCell{
   background-color: grey;
 }
 
-.filled_cell{
+[data-value="1"]{
   background-color: yellow;
+  background-image: image-url('1.jpg');
+  background-size: cover
+}
+[data-value="2"]{
+  background-image: image-url('2.jpg');
+  background-size: cover
+}
+[data-value="3"]{
+  background-image: image-url('3.jpg');
+  background-size: cover
+}
+[data-value="4"]{
+  background-image: image-url('4.jpg');
+  background-size: cover
+}
+[data-value="5"]{
+  background-image: image-url('5.jpg');
+  background-size: cover
+}
+[data-value="6"]{
+  background-image: image-url('6.jpg');
+  background-size: cover
+}
+[data-value="7"]{
+  background-image: image-url('7.jpg');
+  background-size: cover
+}
+[data-value="8"]{
+  background-image: image-url('8.jpg');
+  background-size: cover
+}
+[data-value="9"]{
+  background-image: image-url('9.jpg');
+  background-size: cover
+}
+[data-value="10"]{
+  background-image: image-url('10.jpg');
+  background-size: cover
+}
+[data-value="11"]{
+  background-image: image-url('11.jpg');
+  background-size: cover
 }

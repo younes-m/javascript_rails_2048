@@ -1,12 +1,24 @@
-#game_zone{class: ["row", "ml-5", "mr-5"]}
+#gameZone{class: ["row", "ml-5", "mr-5"]}
 
 
 
 %button{href: "#",
         class: ["btn", "m-3"],
         id: "test_button",
-        onclick: "test_button()"} Bouton haml
+        onclick: "testButton()"} Bouton haml
 
 %button{class: ["btn", "m-3"],
         id: "up_button",
-        onclick: "move_up_call()"} Move up
+        onclick: "moveUpCall()"} Move up
+
+%button{class: ["btn", "m-3"],
+        id: "down_button",
+        onclick: "moveDownCall()"} Move down
+
+%button{class: ["btn", "m-3"],
+        id: "left_button",
+        onclick: "moveLeftCall()"} Move left
+
+%button{class: ["btn", "m-3"],
+        id: "right_button",
+        onclick: "moveRightCall()"} Move right

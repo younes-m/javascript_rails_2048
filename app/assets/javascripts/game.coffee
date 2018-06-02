@@ -1,66 +1,123 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-board_size = 4
+BOARD_SIZE = 4
+UP = 0
+DOWN = 1
+LEFT = 2
+RIGHT = 3
+boardChange = false
 
 
 #VIEW CALLS
-window.test_button = () -> random_drop()
-window.move_up_call = () -> move_up()
+window.testButton = () -> randomDrop()
+window.moveUpCall = () -> move(UP)
+window.moveDownCall = () -> move(DOWN)
+window.moveLeftCall = () -> move(LEFT)
+window.moveRightCall = () -> move(RIGHT)
 
 #GAME LOGIC
 
-move_up = () ->
-  for cell in $('.filled_cell') when cell_number(cell) > board_size
-    cell_up_number = cell_number(cell) - board_size
-    if is_empty(cell_up_number)
-      $("\##{cell.id}").removeClass('filled_cell')
-      $("\##{cell.id}").addClass('empty_cell')
+move = (direction) ->
+  hasMoved = true
+  while hasMoved
+    hasMoved=false
+    for cell in $('.filledCell') by moveSide(direction) when moveCondition(cell, direction)
+      destCellId = moveDestId(cell, direction)
+      if isEmpty(destCellId)
+        moveCell(cell, cellFromId(destCellId))
+        hasMoved=true
+        boardChange = true
+      else mergeCells(cellSelector(cell), cellIdSelector(destCellId))
+  nextTurn() if boardChange
 
-      $("\#cell#{cell_up_number}").addClass('filled_cell')
-      $("\#cell#{cell_up_number}").removeClass('empty_cell')
+moveSide = (direction) -> if direction==DOWN then -1 else 1
 
-      move_up();
+moveCondition = (cell, direction) ->
+  switch direction
+    when UP then canMove = cellNumber(cell) > BOARD_SIZE
+    when DOWN then canMove =  cellNumber(cell) + 4 <= BOARD_SIZE**2
+    when LEFT then canMove = cellNumber(cell)%BOARD_SIZE != 1
+    when RIGHT then canMove = cellNumber(cell)%BOARD_SIZE != 0
 
+moveDestId = (cell, direction) ->
+  switch direction
+    when UP then destId = cellNumber(cell) - BOARD_SIZE
+    when DOWN then destId = cellNumber(cell) + BOARD_SIZE
+    when LEFT then destId = cellNumber(cell) - 1
+    when RIGHT then destId = cellNumber(cell) + 1
 
+nextTurn = () ->
+  for cell in $('.gameCell')
+    cellSelector(cell).data('merged',0)
+  randomDrop()
+  boardChange = false
 
-
-random_drop = () ->
-  if $('.empty_cell').length > 0
-    random_cell = random_empty_cell()
-    $("\##{random_cell.id}").removeClass('empty_cell')
-    $("\##{random_cell.id}").addClass('filled_cell')
+randomDrop = () ->
+  if $('.emptyCell').length > 0
+    randomCell = randomEmptyCell()
+    fillCell(randomCell)
   else
     lose()
 
+
+moveCell = (sourceCell, destinationCell) ->
+  dataValueDest = cellSelector(sourceCell).attr('data-value')
+  fillCell(destinationCell)
+  cellSelector(destinationCell).attr('data-value', dataValueDest)
+  emptyCell(sourceCell)
+
+
+mergeCells = (sourceSelector,destinationSelector) ->
+  if  sourceSelector.data('merged') == 0 and destinationSelector.data('merged') == 0
+    if sourceSelector.attr('data-value') == destinationSelector.attr('data-value')
+      emptyCell(sourceSelector[0])
+      newDataValue = parseInt(destinationSelector.attr('data-value')) + 1
+      destinationSelector.attr('data-value', "#{newDataValue}")
+      destinationSelector.data('merged',1)
+      boardChange=true
+
 lose = () -> alert('YOU LOSE !')
 
-random_empty_cell = () -> $('.empty_cell')[Math.floor(Math.random() * $('.empty_cell').length)]
+randomEmptyCell = () -> $('.emptyCell')[Math.floor(Math.random() * $('.emptyCell').length)]
 
-is_empty = (cell_number) -> $("\#cell#{cell_number}").hasClass('empty_cell')
+isEmpty = (cellNumber) -> $("\#cell#{cellNumber}").hasClass('emptyCell')
 
-initialize = () -> random_drop()
+initialize = () -> randomDrop()
 
-cell_number = (cell) -> parseInt(cell.id.replace('cell',''),10)
 
+# SELECTORS / GETTERS
+cellNumber = (cell) -> parseInt(cell.id.replace('cell',''),10)
+cellIdSelector = (num) -> $("\#cell#{num}")
+cellSelector = (cell) -> $("\##{cell.id}")
+cellFromId = (id) -> $("\#cell#{id}")[0]
 
 # GRAPHIC FUNCTIONS
+fillCell = (cell) ->
+  cellSelector(cell).removeClass('emptyCell')
+  cellSelector(cell).addClass('filledCell')
+  cellSelector(cell).attr('data-value',1)
 
-construct_game = () ->
-  for num in [1..(board_size**2)]
-    create_cell(num)
+emptyCell = (cell) ->
+  cellSelector(cell).removeClass('filledCell')
+  cellSelector(cell).addClass('emptyCell')
+  cellSelector(cell).attr('data-value',0)
 
-    if num%board_size==0
+constructGame = () ->
+  for num in [1..(BOARD_SIZE**2)]
+    createCell(num)
+
+    if num%BOARD_SIZE==0
       create_separator()
 
   initialize();
 
-create_cell = (num) ->
+createCell = (num) ->
   #create a container for the cell
   jQuery('<div />',{
     id: "colcontainer#{num}"
     class: "col m-1"
-  }).appendTo($('#game_zone'))
+  }).appendTo($('#gameZone'))
 
   jQuery('<div />',{
     id: "rowcontainer#{num}"
@@ -70,17 +127,18 @@ create_cell = (num) ->
   #create the cell
   jQuery('<div/>',{
     id: "cell#{num}"
-    class: "col-12 game_cell empty_cell"
+    class: "col-12 gameCell emptyCell"
+
   }).appendTo($("\#rowcontainer#{num}"))
 
-  cell_selector = $("\#cel#{num}")
-
-  cell_selector.html(num)
+  cellIdSelector(num).attr('data-value',0)
+  cellIdSelector(num).data('merged',0)
 
 
 create_separator = () ->
       jQuery('<div/>',{
         class: "separator col-12"
-      }).appendTo($('#game_zone'))
+      }).appendTo($('#gameZone'))
 
-$('document').ready(construct_game)
+$ ->
+  constructGame()
