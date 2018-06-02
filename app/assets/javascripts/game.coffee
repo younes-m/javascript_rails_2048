@@ -3,20 +3,46 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 board_size = 4
 
+
+#VIEW CALLS
 window.test_button = () -> random_drop()
+window.move_up_call = () -> move_up()
 
 #GAME LOGIC
+
+move_up = () ->
+  for cell in $('.filled_cell') when cell_number(cell) > board_size
+    cell_up_number = cell_number(cell) - board_size
+    if is_empty(cell_up_number)
+      $("\##{cell.id}").removeClass('filled_cell')
+      $("\##{cell.id}").addClass('empty_cell')
+
+      $("\#cell#{cell_up_number}").addClass('filled_cell')
+      $("\#cell#{cell_up_number}").removeClass('empty_cell')
+
+      move_up();
+
+
+
+
 random_drop = () ->
   if $('.empty_cell').length > 0
     random_cell = random_empty_cell()
-    console.log(random_cell.id)
     $("\##{random_cell.id}").removeClass('empty_cell')
+    $("\##{random_cell.id}").addClass('filled_cell')
   else
     lose()
 
 lose = () -> alert('YOU LOSE !')
 
 random_empty_cell = () -> $('.empty_cell')[Math.floor(Math.random() * $('.empty_cell').length)]
+
+is_empty = (cell_number) -> $("\#cell#{cell_number}").hasClass('empty_cell')
+
+initialize = () -> random_drop()
+
+cell_number = (cell) -> parseInt(cell.id.replace('cell',''),10)
+
 
 # GRAPHIC FUNCTIONS
 
@@ -26,6 +52,8 @@ construct_game = () ->
 
     if num%board_size==0
       create_separator()
+
+  initialize();
 
 create_cell = (num) ->
   #create a container for the cell
@@ -48,6 +76,7 @@ create_cell = (num) ->
   cell_selector = $("\#cel#{num}")
 
   cell_selector.html(num)
+
 
 create_separator = () ->
       jQuery('<div/>',{

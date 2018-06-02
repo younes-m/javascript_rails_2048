@@ -1,0 +1,79 @@
+I"m(function() {
+  var board_size, construct_game, create_cell, create_separator, initialize, lose, move_up, random_drop, random_empty_cell;
+
+  board_size = 4;
+
+  window.test_button = function() {
+    return random_drop();
+  };
+
+  window.move_up_call = function() {
+    return move_up();
+  };
+
+  move_up = function() {
+    return console.log($('#cell1'));
+  };
+
+  random_drop = function() {
+    var random_cell;
+    if ($('.empty_cell').length > 0) {
+      random_cell = random_empty_cell();
+      $("\#" + random_cell.id).removeClass('empty_cell');
+      return $("\#" + random_cell.id).addClass('cell_value_1');
+    } else {
+      return lose();
+    }
+  };
+
+  lose = function() {
+    return alert('YOU LOSE !');
+  };
+
+  random_empty_cell = function() {
+    return $('.empty_cell')[Math.floor(Math.random() * $('.empty_cell').length)];
+  };
+
+  initialize = function() {
+    return random_drop();
+  };
+
+  construct_game = function() {
+    var i, num, ref;
+    for (num = i = 1, ref = Math.pow(board_size, 2); 1 <= ref ? i <= ref : i >= ref; num = 1 <= ref ? ++i : --i) {
+      create_cell(num);
+      if (num % board_size === 0) {
+        create_separator();
+      }
+    }
+    return initialize();
+  };
+
+  create_cell = function(num) {
+    var cell_selector;
+    jQuery('<div />', {
+      id: "colcontainer" + num,
+      "class": "col m-1"
+    }).appendTo($('#game_zone'));
+    jQuery('<div />', {
+      id: "rowcontainer" + num,
+      "class": "row"
+    }).appendTo($("\#colcontainer" + num));
+    jQuery('<div/>', {
+      id: "cell" + num,
+      "class": "col-12 game_cell empty_cell"
+    }).appendTo($("\#rowcontainer" + num));
+    cell_selector = $("\#cel" + num);
+    return cell_selector.html(num);
+  };
+
+  create_separator = function() {
+    return jQuery('<div/>', {
+      "class": "separator col-12"
+    }).appendTo($('#game_zone'));
+  };
+
+  $('document').ready(construct_game);
+
+}).call(this);
+:ET
