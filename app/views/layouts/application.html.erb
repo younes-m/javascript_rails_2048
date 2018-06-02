@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="row">
+        <div class="offset-1 col-10 shadow">
+          <div class="row">
+            <div class="jumbotron col text-center m-3">
+              <h1 class="display-4">2048</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col m-3">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
