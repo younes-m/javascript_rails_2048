@@ -1,0 +1,51 @@
+I"á(function() {
+  var board_size, construct_game, create_cell, create_separator;
+
+  board_size = 4;
+
+  window.change = function() {
+    return $('#test_button').html("coffee function");
+  };
+
+  construct_game = function() {
+    var i, num, ref, results;
+    results = [];
+    for (num = i = 1, ref = Math.pow(board_size, 2); 1 <= ref ? i <= ref : i >= ref; num = 1 <= ref ? ++i : --i) {
+      create_cell(num);
+      if (num % board_size === 0) {
+        results.push(create_separator());
+      } else {
+        results.push(void 0);
+      }
+    }
+    return results;
+  };
+
+  create_cell = function(num) {
+    var cell_selector;
+    jQuery('<div />', {
+      id: "colcontainer" + num,
+      "class": "col"
+    }).appendTo($('#game_zone'));
+    jQuery('<div />', {
+      id: "rowcontainer" + num,
+      "class": "row"
+    }).appendTo($("\#colcontainer" + num));
+    jQuery('<div/>', {
+      id: "cell" + num,
+      "class": "col game_cell m-1"
+    }).appendTo($('#game_zone'));
+    cell_selector = $("\#cell" + num);
+    return cell_selector.html(num);
+  };
+
+  create_separator = function() {
+    return jQuery('<div/>', {
+      "class": "separator col-12"
+    }).appendTo($('#game_zone'));
+  };
+
+  $('document').ready(construct_game);
+
+}).call(this);
+:ET

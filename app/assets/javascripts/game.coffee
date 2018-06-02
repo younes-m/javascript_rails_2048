@@ -14,12 +14,28 @@ construct_game = () ->
 
 
 create_cell = (num) ->
-  jQuery('<div/>',{
-    id: "cell#{num}"
-    class: "col"
+  jQuery('<div />',{
+    id: "colcontainer#{num}"
+    class: "col m-1"
   }).appendTo($('#game_zone'))
 
-  $("\#cell#{num}").html(num)
+  jQuery('<div />',{
+    id: "rowcontainer#{num}"
+    class: "row"
+    }).appendTo($("\#colcontainer#{num}"))
+
+
+
+  jQuery('<div/>',{
+    id: "cell#{num}"
+    class: "col-12 game_cell"
+  }).appendTo($("\#rowcontainer#{num}"))
+
+  cell_selector = $("\#cel#{num}")
+
+  cell_selector.html(num)
+  #cell_selector.css({'border':'thin solid black'})
+
 
 
 create_separator = () ->
