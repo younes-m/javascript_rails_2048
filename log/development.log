@@ -5,3 +5,116 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 135ms (Views: 17.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-02 10:27:36 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 122ms (Views: 16.5ms)
+
+
+Started GET "/game" for 127.0.0.1 at 2018-06-02 10:30:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/game"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/game" for 127.0.0.1 at 2018-06-02 10:33:44 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 477ms (Views: 476.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-02 10:34:47 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-02 10:38:34 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 1668ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/cthaat/rails-workspace/javascript_rails_2048/app/assets/config
+  /home/cthaat/rails-workspace/javascript_rails_2048/app/assets/images
+  /home/cthaat/rails-workspace/javascript_rails_2048/app/assets/javascripts
+  /home/cthaat/rails-workspace/javascript_rails_2048/app/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /var/lib/gems/2.3.0/gems/actioncable-5.1.6/lib/assets/compiled
+  /var/lib/gems/2.3.0/gems/actionview-5.1.6/lib/assets/compiled
+  /var/lib/gems/2.3.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/cthaat/rails-workspace/javascript_rails_2048/node_modules
+  /var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  /var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  /var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/fonts
+  /var/lib/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/images):
+    4:     <title>Ym2048</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__644737637461376772_46999940509320'
+Started GET "/" for 127.0.0.1 at 2018-06-02 10:39:59 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1862ms (Views: 1734.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-02 10:40:54 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 26.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-02 10:41:55 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 30.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-02 10:43:45 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.erb within layouts/application
+  Rendered game/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3904ms (Views: 3783.5ms)
+
+
