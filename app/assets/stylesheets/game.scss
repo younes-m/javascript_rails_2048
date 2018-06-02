@@ -4,8 +4,11 @@
 
 .game_cell{
   border: thin solid black ;
-  background-color: grey;
   position:relative;
   overflow:hidden;
   padding-bottom:100%;
+}
+
+.empty_cell{
+  background-color: grey;
 }
