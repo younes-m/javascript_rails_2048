@@ -7,7 +7,7 @@ DOWN = 1
 LEFT = 2
 RIGHT = 3
 boardChange = false
-won = false;
+won = false
 
 
 #VIEW CALLS
@@ -52,21 +52,27 @@ moveDestId = (cell, direction) ->
     when RIGHT then destId = cellNumber(cell) + 1
 
 nextTurn = () ->
-  if $(".gameCell[data-value='3']").length > 0 and not won
+  randomDrop()
+  updateScore()
+  if $(".gameCell[data-value='11']").length > 0 and not won
     win()
 
   for cell in $('.gameCell')
     cellSelector(cell).data('merged',0)
-  randomDrop()
+
   boardChange = false
 
 randomDrop = () ->
   if $('.emptyCell').length > 0
     randomCell = randomEmptyCell()
     fillCell(randomCell)
-  else
-    lose()
 
+
+countScore = () ->
+  score=0
+  for cell in $('.filledCell')
+    score+= 2**cellSelector(cell).attr('data-value')
+  score
 
 moveCell = (sourceCell, destinationCell) ->
   dataValueDest = cellSelector(sourceCell).attr('data-value')
@@ -110,6 +116,8 @@ cellSelector = (cell) -> $("\##{cell.id}")
 cellFromId = (id) -> $("\#cell#{id}")[0]
 
 # GRAPHIC FUNCTIONS
+updateScore = () ->  $('#score').html("Score : #{countScore()}")
+
 fillCell = (cell) ->
   cellSelector(cell).removeClass('emptyCell')
   cellSelector(cell).addClass('filledCell')

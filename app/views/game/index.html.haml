@@ -1,28 +1,28 @@
 #gameZone{class: ["row", "ml-5", "mr-5"]}
 
 
+#directionalButtonqZone{class: ["row", "ml-5", "mr-5"]}
+  %button{class: ["btn", "m-3", "col"],
+          id: "left_button",
+          onclick: "moveLeftCall()"} Move left
 
-%button{href: "#",
-        class: ["btn", "m-3"],
-        id: "test_button",
-        onclick: "testButton()"} Bouton haml
+  %button{class: ["btn", "m-3", "col"],
+          id: "up_button",
+          onclick: "moveUpCall()"} Move up
 
-%button{class: ["btn", "m-3"],
-        id: "up_button",
-        onclick: "moveUpCall()"} Move up
+  %button{class: ["btn", "m-3", "col"],
+          id: "down_button",
+          onclick: "moveDownCall()"} Move down
 
-%button{class: ["btn", "m-3"],
-        id: "down_button",
-        onclick: "moveDownCall()"} Move down
+  %button{class: ["btn", "m-3", "col"],
+          id: "right_button",
+          onclick: "moveRightCall()"} Move right
 
-%button{class: ["btn", "m-3"],
-        id: "left_button",
-        onclick: "moveLeftCall()"} Move left
-
-%button{class: ["btn", "m-3"],
-        id: "right_button",
-        onclick: "moveRightCall()"} Move right
+#scoreZone{class: ["ml-5", "mr-5", "row"]}
+  %div{class: ["input-group-text","col", "ml-3", "mr-3"], id: "score"} Score : 1
 
 %button{class: ["btn", "m-3"],
         id: "restart_button",
         onclick: "restartCall()"} Restart
+
+= button_to "high_scores", high_scores_path, {class: 'btn', method: "get"} 

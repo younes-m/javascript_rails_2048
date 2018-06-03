@@ -3881,3 +3881,1008 @@ Processing by GameController#index as HTML
 Completed 200 OK in 292ms (Views: 291.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:02:40 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 58ms (Views: 57.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:03:08 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 46ms (Views: 45.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:04:01 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+SyntaxError (/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ']'
+...nqZone"}, nil,class: ["row, "ml-5", "mr-5"])).to_s);; _hamlo...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...one"}, nil,class: ["row, "ml-5", "mr-5"])).to_s);; _hamlout....
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+..., nil,class: ["row, "ml-5", "mr-5"])).to_s);; _hamlout.buffe...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+...il,class: ["row, "ml-5", "mr-5"])).to_s);; _hamlout.buffer <...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+...to_s);; _hamlout.buffer << (">\n<button class='btn m-3 col' ...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...ut.buffer << (">\n<button class='btn m-3 col' id='left_butto...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n<button class='btn m-3 col' id='left_button' onclick='moveL...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+...3 col' id='left_button' onclick='moveLeftCall()'>Move left</...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...lick='moveLeftCall()'>Move left</button>\n<button class='btn...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: unknown regexp options - btt
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+...moveUpCall()'>Move up</button>\n<button class='btn m-3 col' ...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...Move up</button>\n<button class='btn m-3 col' id='down_butto...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n<button class='btn m-3 col' id='down_button' onclick='moveD...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+...3 col' id='down_button' onclick='moveDownCall()'>Move down</...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...lick='moveDownCall()'>Move down</button>\n<button class='btn...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: unknown regexp options - btt
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+...ghtCall()'>Move right</button>\n</div>\n<button class='btn m...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: unknown regexp options - btt
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+...estartCall()'>Restart</button>\n".freeze);; 
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: unterminated string meets end of file
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:4: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ']'
+app/views/game/index.html.haml:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/game/index.html.haml:4: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+app/views/game/index.html.haml:4: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/game/index.html.haml:4: unknown regexp options - btt
+app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+app/views/game/index.html.haml:4: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/game/index.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/game/index.html.haml:4: unknown regexp options - btt
+app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+app/views/game/index.html.haml:4: unknown regexp options - btt
+app/views/game/index.html.haml:4: syntax error, unexpected $undefined
+app/views/game/index.html.haml:4: unterminated string meets end of file
+app/views/game/index.html.haml:4: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:04:12 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 47ms (Views: 45.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:17:42 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    28: 
+    29:   <div class="input-group mb-3">
+    30:   <div class="input-group-prepend">
+    31:     <span class="input-group-text" id="basic-addon1">@</span>
+    32:   </div>
+    33:   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    34: </div>
+  
+app/views/game/index.html.haml:31
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:17:55 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+SyntaxError (/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:23: syntax error, unexpected ')', expecting =>
+...input-group-text"], id="score")).to_s);; _hamlout.buffer << ...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:25: syntax error, unexpected ')', expecting ']'
+...class: ["form-control","col-8")).to_s);; _hamlout.buffer << ...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:30: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:30: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:33: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/game/index.html.haml:23: syntax error, unexpected ')', expecting =>
+app/views/game/index.html.haml:25: syntax error, unexpected ')', expecting ']'
+app/views/game/index.html.haml:30: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/game/index.html.haml:30: syntax error, unexpected keyword_end, expecting ')'
+app/views/game/index.html.haml:33: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:18:17 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 12ms
+
+
+  
+SyntaxError (/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:25: syntax error, unexpected ')', expecting ']'
+...class: ["form-control","col-8")).to_s);; _hamlout.buffer << ...
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:30: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:30: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:33: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/game/index.html.haml:25: syntax error, unexpected ')', expecting ']'
+app/views/game/index.html.haml:30: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/game/index.html.haml:30: syntax error, unexpected keyword_end, expecting ')'
+app/views/game/index.html.haml:33: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:18:49 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 47ms (Views: 45.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:19:10 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 45ms (Views: 43.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:19:24 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 54ms (Views: 53.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:20:28 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    19:           onclick: "moveRightCall()"} Move right
+    20: 
+    21: #scoreZone{class: ["ml-5", "mr-5", "row"]}
+    22:     %div{class: ["input-group-text","col"], id: "score"} Score : 1
+    23: 
+    24: 
+    25: 
+  
+app/views/game/index.html.haml:22
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:20:38 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 46ms (Views: 44.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:21:20 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 44ms (Views: 43.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:21:28 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 41ms (Views: 40.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:23:56 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 293ms (Views: 291.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:24:44 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 292ms (Views: 291.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:25:16 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 301ms (Views: 300.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:25:28 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 42ms (Views: 41.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:26:02 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 289ms (Views: 288.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:26:15 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 295ms (Views: 294.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:26:33 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 291ms (Views: 290.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:26:58 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 295ms (Views: 294.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:28:07 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 296ms (Views: 294.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:29:42 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 300ms (Views: 299.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:30:04 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 295ms (Views: 293.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:30:36 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 305ms (Views: 302.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:30:47 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 350ms (Views: 348.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:31:20 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 301ms (Views: 299.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:36:19 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 11:36:47 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 290ms (Views: 289.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHighScores (20180603100241)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "high_scores" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user" text, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180603100241"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-06-03 10:03:04.813690"], ["updated_at", "2018-06-03 10:03:04.813690"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:06:30 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unbalanced brackets.):
+    25:         id: "restart_button",
+    26:         onclick: "restartCall()"} Restart
+    27: 
+    28: %button{class: ["btn", "m-3"],
+    29:         id: "showHighScores"
+    30:         href: high_scores_path}
+  
+app/views/game/index.html.haml:28
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:06:41 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 2021ms (Views: 2019.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:06:55 +0200
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for HighScoresController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:07:49 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 45ms (Views: 44.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:09:20 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 51ms (Views: 50.3ms)
+
+
+Started POST "/high_scores" for 127.0.0.1 at 2018-06-03 12:09:22 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/high_scores"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/high_scores" for 127.0.0.1 at 2018-06-03 12:09:47 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/high_scores"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:09:49 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 62ms (Views: 60.8ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:09:51 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 43.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:09:56 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 45ms (Views: 43.3ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:10:22 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 291ms (Views: 289.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:11:49 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:28: syntax error, unexpected '\n', expecting =>
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:29: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:29: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:32: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/game/index.html.haml:28: syntax error, unexpected '\n', expecting =>
+app/views/game/index.html.haml:29: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/game/index.html.haml:29: syntax error, unexpected keyword_end, expecting ')'
+app/views/game/index.html.haml:32: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:12:04 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+SyntaxError (/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:28: syntax error, unexpected ',', expecting =>
+...igh_scores", {high_scores_path, method: :get}, {class: 'btn'}
+...                               ^):
+  
+app/views/game/index.html.haml:28: syntax error, unexpected ',', expecting =>
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:12:36 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (16.8ms)
+Completed 500 Internal Server Error in 19ms
+
+
+  
+SyntaxError (/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:28: syntax error, unexpected '\n', expecting =>
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:29: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:29: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/home/cthaat/rails-workspace/javascript_rails_2048/app/views/game/index.html.haml:32: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/game/index.html.haml:28: syntax error, unexpected '\n', expecting =>
+app/views/game/index.html.haml:29: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/game/index.html.haml:29: syntax error, unexpected keyword_end, expecting ')'
+app/views/game/index.html.haml:32: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:12:50 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 49ms (Views: 47.4ms)
+
+
+Started POST "/high_scores" for 127.0.0.1 at 2018-06-03 12:12:53 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/high_scores"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:13:07 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 0..3)):
+    25:         id: "restart_button",
+    26:         onclick: "restartCall()"} Restart
+    27: 
+    28: = button_to "high_scores", high_scores_path, {class: 'btn'}, method: 'get' 
+  
+app/views/game/index.html.haml:28:in `_app_views_game_index_html_haml___3579317304272197265_69877618415560'
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:13:21 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 46ms (Views: 45.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:13:23 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 44.5ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "high_scores" ("user", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user", "Francis"], ["score", 12], ["created_at", "2018-06-03 10:14:23.026422"], ["updated_at", "2018-06-03 10:14:23.026422"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mHighScore Load (0.6ms)[0m  [1m[34mSELECT  "high_scores".* FROM "high_scores" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:15:53 +0200
+Processing by HighScoresController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant HighScoresController::HighScores):
+  
+app/controllers/high_scores_controller.rb:3:in `index'
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:15:59 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 46.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:16:02 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 44.6ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:16:25 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 40.6ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:17:33 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  Rendered high_scores/index.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+ActionView::Template::Error (You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block):
+    2: 
+    3: - @scores.each do |s|
+    4:   %p s
+    5: - end
+  
+app/views/high_scores/index.html.haml:5
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:17:46 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.1ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:18:44 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:18:50 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:20:19 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:20:58 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-06-03 12:21:00 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/" for 127.0.0.1 at 2018-06-03 12:21:15 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:21:21 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:21:24 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:21:25 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:21:29 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:21:31 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:21:59 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:22:33 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:22:36 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:22:39 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:22:43 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:22:52 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.3ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:22:58 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:24:30 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<HighScore:0x007f1b62010840>):
+    1: %h1 High Scores
+    2: 
+    3: - @scores.each do |s|
+    4:   %p= s.name
+    5: 
+    6: 
+    7: = button_to "Back", root_path, {method: 'get', class: 'btn'}
+  
+app/views/high_scores/index.html.haml:4:in `block in _app_views_high_scores_index_html_haml___2917700308982838373_69877793158860'
+app/views/high_scores/index.html.haml:3:in `_app_views_high_scores_index_html_haml___2917700308982838373_69877793158860'
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:24:40 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:26:55 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:28:52 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:28:52 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:28:54 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:29:12 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:29:19 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:29:20 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 127.0.0.1 at 2018-06-03 12:29:23 +0200
+Processing by HighScoresController#index as HTML
+  Rendering high_scores/index.html.haml within layouts/application
+  [1m[36mHighScore Load (0.2ms)[0m  [1m[34mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 12:29:25 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+

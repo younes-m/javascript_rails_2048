@@ -1,0 +1,8 @@
+%h1 High Scores
+
+- @scores.each do |s|
+  %div{class: ["row"]}
+    %div{class: ["col"]}= s.user
+    %div{class: ["col"]}= s.score
+
+= button_to "Back", root_path, {method: 'get', class: 'btn'}
