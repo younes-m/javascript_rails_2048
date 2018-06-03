@@ -171,10 +171,21 @@ create_separator = () ->
 $ ->
   constructGame()
   document.onkeypress = keyDirection
-  document.swipe = onSwipe
 
-onSwipe = (e) ->
-  moveLeftCall()
+
+$ ->
+  #Enable swiping...
+  $('#gameZone').swipe
+    swipe: (event, direction, distance, duration, fingerCount, fingerData) ->
+      switch direction
+        when "down" then moveDownCall()
+        when "up" then moveUpCall()
+        when "left" then moveLeftCall()
+        when "right" then moveRightCall()
+      return
+    threshold: 75
+  return
+
 
 keyDirection = (e) ->
   switch e.key

@@ -5419,3 +5419,303 @@ Processing by GameController#index as HTML
 Completed 200 OK in 310ms (Views: 309.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:14:36 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:15:43 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 400ms (Views: 397.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:16:32 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (19.5ms)
+Completed 200 OK in 452ms (Views: 448.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:17:05 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (20.5ms)
+Completed 200 OK in 387ms (Views: 384.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:18:43 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (21.6ms)
+Completed 200 OK in 404ms (Views: 402.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:19:14 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (21.5ms)
+Completed 200 OK in 383ms (Views: 381.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:19:24 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 396ms (Views: 394.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:22:37 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 380ms (Views: 378.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:25:04 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 271ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:174:25: unexpected =):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+(execjs):7539:8
+(execjs):7545:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2221006480941745258_69882692578480'
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:26:03 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 402ms (Views: 400.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:27:58 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 356ms (Views: 354.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:28:19 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (18.6ms)
+Completed 200 OK in 382ms (Views: 378.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:29:52 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (25.1ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:30:27 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (23.8ms)
+Completed 200 OK in 376ms (Views: 371.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:30:48 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 343ms (Views: 342.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:30:58 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 363ms (Views: 361.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:31:15 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (17.6ms)
+Completed 200 OK in 356ms (Views: 354.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:31:38 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 372ms (Views: 370.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:31:50 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (26.1ms)
+Completed 200 OK in 388ms (Views: 386.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:32:11 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (24.1ms)
+Completed 200 OK in 383ms (Views: 380.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:32:30 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (27.8ms)
+Completed 200 OK in 387ms (Views: 384.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:33:28 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 369ms (Views: 366.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:34:15 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 375ms (Views: 372.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:34:25 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:34:34 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 90ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:34:46 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:34:48 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:34:48 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:34:49 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:35:11 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:35:19 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:35:28 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (32.2ms)
+Completed 200 OK in 88ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:35:40 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (27.8ms)
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:35:50 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (26.1ms)
+Completed 200 OK in 84ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:36:07 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (23.3ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:36:16 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:37:18 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:37:51 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:38:03 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:38:36 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-03 15:38:56 +0200
+Processing by GameController#index as HTML
+  Rendering game/index.html.haml within layouts/application
+  Rendered game/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
