@@ -19,6 +19,7 @@ window.moveRightCall = () -> move(RIGHT)
 window.restartCall = () ->
   restart()
   randomDrop()
+  updateScore()
 
 #GAME LOGIC
 
@@ -53,13 +54,13 @@ moveDestId = (cell, direction) ->
 
 nextTurn = () ->
   randomDrop()
-  updateScore()
   if $(".gameCell[data-value='11']").length > 0 and not won
     win()
 
   for cell in $('.gameCell')
     cellSelector(cell).data('merged',0)
 
+  updateScore()
   boardChange = false
 
 randomDrop = () ->
@@ -135,7 +136,9 @@ constructGame = () ->
     if num%BOARD_SIZE==0
       create_separator()
 
-  initialize();
+  initialize()
+  updateScore()
+
 
 createCell = (num) ->
   #create a container for the cell
