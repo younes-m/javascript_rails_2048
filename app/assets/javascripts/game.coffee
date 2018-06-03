@@ -171,7 +171,10 @@ create_separator = () ->
 $ ->
   constructGame()
   document.onkeypress = keyDirection
-  document.onswipeleft = moveLeftCall
+  document.swipe = onSwipe
+
+onSwipe = (e) ->
+  moveLeftCall()
 
 keyDirection = (e) ->
   switch e.key
