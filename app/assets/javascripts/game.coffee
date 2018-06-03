@@ -7,6 +7,7 @@ DOWN = 1
 LEFT = 2
 RIGHT = 3
 boardChange = false
+won = false;
 
 
 #VIEW CALLS
@@ -15,6 +16,9 @@ window.moveUpCall = () -> move(UP)
 window.moveDownCall = () -> move(DOWN)
 window.moveLeftCall = () -> move(LEFT)
 window.moveRightCall = () -> move(RIGHT)
+window.restartCall = () ->
+  restart()
+  randomDrop()
 
 #GAME LOGIC
 
@@ -31,7 +35,7 @@ move = (direction) ->
       else mergeCells(cellSelector(cell), cellIdSelector(destCellId))
   nextTurn() if boardChange
 
-moveSide = (direction) -> if direction==DOWN then -1 else 1
+moveSide = (direction) -> if direction==DOWN or direction==RIGHT then -1 else 1
 
 moveCondition = (cell, direction) ->
   switch direction
@@ -48,6 +52,9 @@ moveDestId = (cell, direction) ->
     when RIGHT then destId = cellNumber(cell) + 1
 
 nextTurn = () ->
+  if $(".gameCell[data-value='3']").length > 0 and not won
+    win()
+
   for cell in $('.gameCell')
     cellSelector(cell).data('merged',0)
   randomDrop()
@@ -79,6 +86,16 @@ mergeCells = (sourceSelector,destinationSelector) ->
 
 lose = () -> alert('YOU LOSE !')
 
+win = () ->
+  won=true
+  if not confirm('You win ! Continue playing ?')
+    restart()
+
+restart = () ->
+  won=false
+  for cell in $('.gameCell')
+    emptyCell(cell)
+
 randomEmptyCell = () -> $('.emptyCell')[Math.floor(Math.random() * $('.emptyCell').length)]
 
 isEmpty = (cellNumber) -> $("\#cell#{cellNumber}").hasClass('emptyCell')
@@ -96,7 +113,7 @@ cellFromId = (id) -> $("\#cell#{id}")[0]
 fillCell = (cell) ->
   cellSelector(cell).removeClass('emptyCell')
   cellSelector(cell).addClass('filledCell')
-  cellSelector(cell).attr('data-value',1)
+  if Math.random() < 0.9 then cellSelector(cell).attr('data-value',1) else cellSelector(cell).attr('data-value',2)
 
 emptyCell = (cell) ->
   cellSelector(cell).removeClass('filledCell')
@@ -142,3 +159,15 @@ create_separator = () ->
 
 $ ->
   constructGame()
+  document.onkeypress = keyDirection
+
+keyDirection = (e) ->
+  switch e.key
+    when "ArrowUp" then moveUpCall()
+    when "ArrowDown" then moveDownCall()
+    when "ArrowLeft" then moveLeftCall()
+    when "ArrowRight" then moveRightCall()
+    when "z" then moveUpCall()
+    when "s" then moveDownCall()
+    when "q" then moveLeftCall()
+    when "d" then moveRightCall()
