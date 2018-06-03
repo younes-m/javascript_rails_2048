@@ -182,3 +182,5 @@ keyDirection = (e) ->
     when "s" then moveDownCall()
     when "q" then moveLeftCall()
     when "d" then moveRightCall()
+
+swipeleft = (e) -> moveLeftCall()
